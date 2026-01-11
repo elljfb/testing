@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Adventure Tours - Our Tours</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c5364 0%, #203a43 50%, #0f2027 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4ecdc4;
+        }
+
+        nav a.active {
+            color: #4ecdc4;
+            border-bottom: 2px solid #4ecdc4;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #4ecdc4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #45b7b0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section h2 {
+            color: #2c5364;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .tours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tour-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .tour-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tour-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .tour-content {
+            padding: 1.5rem;
+        }
+
+        .tour-content h3 {
+            color: #2c5364;
+            margin-bottom: 0.5rem;
+        }
+
+        .tour-content .price {
+            color: #4ecdc4;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+
+        .footer {
+            background: #2c5364;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin: 1rem 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .footer-links a:hover {
+            color: #4ecdc4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">⛰️ Mountain Adventures</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="tours.html" class="active">Tours</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div class="content-section">
+            <h2>Our Tours</h2>
+            <p>Choose from our selection of guided mountain adventures. Each tour is designed to showcase the beauty of the wilderness while ensuring your safety and comfort.</p>
+
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="tour-content">
+                        <h3>Summit Challenge</h3>
+                        <p>A 3-day expedition to conquer our highest peak. Perfect for experienced hikers looking for a challenge.</p>
+                        <p><strong>Duration:</strong> 3 days</p>
+                        <p><strong>Difficulty:</strong> Advanced</p>
+                        <p class="price">$599</p>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="tour-content">
+                        <h3>Valley Explorer</h3>
+                        <p>A leisurely 2-day hike through scenic valleys with stunning views and waterfalls.</p>
+                        <p><strong>Duration:</strong> 2 days</p>
+                        <p><strong>Difficulty:</strong> Beginner</p>
+                        <p class="price">$349</p>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="tour-content">
+                        <h3>Alpine Lakes Tour</h3>
+                        <p>Discover crystal-clear alpine lakes on this moderate 4-day trek through pristine wilderness.</p>
+                        <p><strong>Duration:</strong> 4 days</p>
+                        <p><strong>Difficulty:</strong> Intermediate</p>
+                        <p class="price">$749</p>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="tour-content">
+                        <h3>Sunrise Peak</h3>
+                        <p>A magical day hike to catch the sunrise from a spectacular mountain viewpoint.</p>
+                        <p><strong>Duration:</strong> 1 day</p>
+                        <p><strong>Difficulty:</strong> Beginner</p>
+                        <p class="price">$129</p>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="tour-content">
+                        <h3>Wildlife Safari Trek</h3>
+                        <p>A 5-day adventure focused on wildlife spotting and nature photography in remote areas.</p>
+                        <p><strong>Duration:</strong> 5 days</p>
+                        <p><strong>Difficulty:</strong> Intermediate</p>
+                        <p class="price">$899</p>
+                    </div>
+                </div>
+
+                <div class="tour-card">
+                    <div class="tour-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="tour-content">
+                        <h3>Full Moon Hike</h3>
+                        <p>Experience the mountains under moonlight on this unique nighttime adventure.</p>
+                        <p><strong>Duration:</strong> 1 night</p>
+                        <p><strong>Difficulty:</strong> Beginner</p>
+                        <p class="price">$159</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" style="margin-top: 3rem;">
+            <h2>Ready to Book?</h2>
+            <p>Contact us today to reserve your spot on any of our tours. Space is limited!</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Mountain Adventures. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="tours.html">Tours</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p style="margin-top: 1rem;">📧 info@mountainadventures.com | 📞 (555) 123-4567</p>
+        </div>
+    </div>
+</body>
+</html>
